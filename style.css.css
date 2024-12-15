@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+nav {
+    background: #333;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background: #ff6347;
+    border-radius: 5px;
+}
+
+.menu-section {
+    padding: 1rem;
+}
+
+.menu-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff6347;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.menu-item-details {
+    flex: 1;
+}
+
+.menu-item-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.menu-item-details .price {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.menu-item-details .description {
+    margin: 0.5rem 0;
+}
+
+.add-to-cart {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #e55342;
+}
+
+.cart {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-top: 2px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.cart h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.cart-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.submit-order,
+.back-to-menu {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    width: 48%;
+}
+
+.submit-order:hover,
+.back-to-menu:hover {
+    background: #e55342;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item img {
+        margin: 0 auto 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .submit-order,
+    .back-to-menu {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
